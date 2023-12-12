@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Formularios</h1>
+    </header>
+    <main>
+        <form>
+            <label for="nombre">Nombre y apellido</label>
+            <input type="text" id="nombre" placeholder="Juan Ruiz" required minlength="2"
+            maxlength="10">
+            <br/>
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" min="13" max="100">
+            <br/>
+            <label for="correo">Correo Electronico</label>
+            <input type="email" id="correo">
+            <br/>
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena">
+            <br/>
+            <label>Estado civil</label>
+            <br/>
+            <input type="radio" casado name="estado civil" value="casado">
+            <label for="casado">casado</label>
+            <br>
+            <input type="radio" soltero name="estado civil" value="soltero">
+            <label for soltero>soltero</label>
+            <br>
+            <input type="radio" id="viudo" name="estado civil" value="viudo">
+            <label for="viudo">viudo</label>
+            <br/>
+            <label>Ciudad</label>
+            <select>
+                <option selected disabled>Seleccione una opcion</option>
+                <option value="LIM">Lima</option>
+                <option value="CUS">Cusco</option>
+                <option value="CHI">Chiclayo</option>
+                <option>Chachapoyas</option>
+            </select>
+            <br/>
+            <input type="submit" value="Enviar">
+        </form>
+
+    </main>
+</body>
+</html>
